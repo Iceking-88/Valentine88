@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Valentine's Day</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background: pink;
+            color: white;
+            margin: 0;
+            padding: 0;
+            animation: fadeIn 2s ease-in;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            padding: 20px;
+        }
+        h1 {
+            font-size: 36px;
+            margin-top: 20px;
+        }
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 10px;
+            margin-top: 20px;
+        }
+        .gallery-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .gallery img {
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .gallery img:hover {
+            transform: scale(1.1);
+            box-shadow: 0 8px 12px rgba(0,0,0,0.2);
+        }
+        .date {
+            margin-top: 5px;
+            font-size: 14px;
+            color: #fff;
+        }
+        .message {
+            font-size: 20px;
+            margin-top: 30px;
+            background: rgba(255, 255, 255, 0.2);
+            padding: 10px;
+            border-radius: 10px;
+            animation: pulse 2s infinite;
+        }
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+            100% { transform: scale(1); }
+        }
+        audio {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Happy Valentine's Day, My Love! ❤️</h1>
+        <div class="gallery">
+            <div class="gallery-item">
+                <a href="image1.html"><img src="us_1.jpeg" alt="Us 1"></a>
+                <div class="date">September 2, 2024</div>
+            </div>
+            <div class="gallery-item">
+                <a href="image2.html"><img src="us_2.jpeg" alt="Us 2"></a>
+                <div class="date">April 26, 2024</div>
+            </div>
+            <div class="gallery-item">
+                <a href="image3.html"><img src="us_3.jpeg" alt="Us 3"></a>
+                <div class="date">December 23, 2023</div>
+            </div>
+            <div class="gallery-item">
+                <a href="image4.html"><img src="us_4.jpeg" alt="Us 4"></a>
+                <div class="date">April 5, 2023</div>
+            </div>
+            <div class="gallery-item">
+                <a href="image5.html"><img src="us_5.jpeg" alt="Us 5"></a>
+                <div class="date">September 7, 2024</div>
+            </div>
+            <div class="gallery-item">
+                <a href="image6.html"><img src="us_6.jpeg" alt="Us 6"></a>
+                <div class="date">April 22, 2023</div>
+            </div>
+            <div class="gallery-item">
+                <a href="image7.html"><img src="us_7.jpeg" alt="Us 7"></a>
+                <div class="date">December 20, 2023</div>
+            </div>
+            <div class="gallery-item">
+                <a href="image8.html"><img src="us_8.jpeg" alt="Us 8"></a>
+                <div class="date">December 20, 2023</div>
+            </div>
+        </div>
+        <div class="message">
+            <p>Every moment with you is a beautiful memory. I love you always and forever! 💕</p>
+        </div>
+        <audio controls autoplay loop>
+            <source src="ALLOFME.mp4" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+    </div>
+</body>
+</html>
